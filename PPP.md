@@ -100,10 +100,10 @@ Progress will be tracked using:
   - In Progress
   - Completed features
 
-Burndown is measured by:
-- Features implemented
-- Systems stabilized
-- Demonstrable progress during sprint presentations
+- Number of Features: 5
+
+- Total Requirements: 19
+- Burndown Rate: 0/19 0%
 
 ---
 
