@@ -1,14 +1,3 @@
----
-
-marp: true
-theme: default
-style: |
-section {
-background-color: white;
-color: black;
-}
--
-
 ## Campaign Mode Technical Breakdown
 
 ## High-Level Overview (Slide Breakdown)
