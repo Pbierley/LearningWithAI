@@ -1,211 +1,132 @@
----
-marp: true
-title: Project Plan Presentation (PPP)
-subtitle: Hand Gesture Wizard Game – ASE 485
-theme: default
-paginate: true
----
+## Campaign Mode Technical Breakdown
 
-# Project Plan Presentation (PPP)
-## Hand Gesture Wizard Game (C#)
-
-**Course:** ASE 485  
-**Focus:** System Design, AI-Assisted Learning, Deployment
+This section provides a technical breakdown of the planned campaign mode for the Hand Gesture Wizard game. It decomposes the system into features, formal requirements, and corresponding test strategies to ensure correctness, stability, and measurable progress.
 
 ---
 
-## PPP Readiness Statement
+## Feature 1: Campaign Progression System
 
-By this presentation, I am prepared to demonstrate that:
+### Description
 
-- I am ready to present **capstone project goals, features, and burndown metrics**
-- I am ready to explain **how I am learning with AI tools**
-- I am ready to answer **technical and design questions** from stakeholders
-- All project and AI-learning documentation is **publicly accessible**
+Provides structured progression through the game, transitioning from a single demonstration scenario into a multi-stage campaign with increasing difficulty and content unlocks.
 
----
+### Requirements
 
-## Project Overview
+* R1.1: The system shall track player campaign progress persistently across sessions.
+* R1.2: The system shall define discrete campaign stages (nodes or levels).
+* R1.3: Completion of a stage shall unlock the next available stage.
+* R1.4: Campaign progress data shall be stored using Unity’s save system or equivalent persistent storage.
 
-**Project:** Gesture-Based Wizard Spellcasting Game  
-**Technology:** C#, Unity, Hand Gesture Recognition  
-**Core Idea:**  
-Players cast spells using real-world hand gestures that are recognized and translated into in-game actions.
+### Testing
 
-This project combines:
-- Game development
-- Human–computer interaction
-- AI-assisted system design
+* T1.1: Verify campaign progress is saved and restored after restarting the application.
+* T1.2: Complete a stage and confirm the next stage becomes accessible.
+* T1.3: Attempt to access locked stages and verify access is denied.
 
 ---
 
-## Capstone Project Goals
+## Feature 2: Spell Progression and Unlocking
 
-The primary goals of this project are:
+### Description
 
-- Build a functional **gesture-driven gameplay system**
-- Design a **campaign mode** with progression and learning
-- Apply **software engineering principles** at the system level
-- Demonstrate responsible and intentional **use of AI tools**
+Introduces a learning curve by progressively unlocking spells as the player advances through the campaign.
 
----
+### Requirements
 
-## Core Features (Planned)
+* R2.1: The system shall initialize new campaigns with a restricted spell set.
+* R2.2: Spells shall be unlockable based on campaign milestones.
+* R2.3: The player shall only be able to equip spells that have been unlocked.
+* R2.4: Unlock conditions shall be data-driven to allow easy tuning.
 
-### Gameplay Features
-- Hand gesture–based spell casting
-- Wizard combat system
-- CPU-controlled opponents
+### Testing
 
-### Campaign Features
-- Progressive spell unlocking
-- Learning-oriented spell introduction
-- Map-based world traversal
-- Increasing opponent difficulty
+* T2.1: Start a new campaign and verify only starter spells are available.
+* T2.2: Complete a milestone and verify the correct spell is unlocked.
+* T2.3: Attempt to equip a locked spell and confirm the action is blocked.
 
 ---
 
-## Current State of the Project
+## Feature 3: World Map Navigation
 
-At the time of the PPP:
+### Description
 
-- Tutorial is implemented
-- Core gesture recognition pipeline is functional
-- One static-difficulty CPU opponent exists
+Implements a map-based interface where players select and travel between encounters.
 
-This provides a stable foundation for campaign expansion.
+### Requirements
 
----
+* R3.1: The system shall present a navigable campaign map UI.
+* R3.2: Each map node shall correspond to a combat encounter or event.
+* R3.3: Locked nodes shall be visually distinguishable from unlocked nodes.
+* R3.4: Selecting an unlocked node shall transition the player into the associated encounter.
 
-## Campaign Expansion Plan
+### Testing
 
-Planned additions include:
-- Spell locking and unlocking system
-- Campaign map with multiple encounter nodes
-- Multiple CPU opponents with scalable difficulty
-- Progress tracking across the campaign
-
-Each feature is scoped to fit sprint-based development.
+* T3.1: Verify all map nodes correctly represent their campaign state (locked/unlocked).
+* T3.2: Select an unlocked node and confirm correct scene loading.
+* T3.3: Attempt to select a locked node and verify no transition occurs.
 
 ---
 
-## Metrics & Burndown Tracking
+## Feature 4: AI Opponent Scaling
 
-Progress will be tracked using:
+### Description
 
-- Sprint-based feature completion
-- Weekly milestones aligned with ASE 485 schedule
-- Clear separation of:
-  - Planned
-  - In Progress
-  - Completed features
+Expands beyond a single static CPU opponent by introducing difficulty scaling across the campaign.
 
-- Number of Features: 5
+### Requirements
 
-- Total Requirements: 19
-- Burndown Rate: 0/19 0%
+* R4.1: The system shall support multiple AI difficulty profiles.
+* R4.2: AI difficulty shall increase as campaign progression advances.
+* R4.3: AI behavior parameters shall be configurable without code changes.
 
----
+### Testing
 
-## Learning With AI – Overview
-
-AI is a **tool for learning**, not a replacement for thinking.
-
-I use AI to:
-- Learn C# more effectively
-- Refine software design patterns and architecture
-- Understand gesture recognition systems
-- Debug and reason about complex behavior
+* T4.1: Compare AI behavior across early and late campaign encounters.
+* T4.2: Validate difficulty parameters update correctly when loading different stages.
 
 ---
 
-## Learning Goal 1: Learning C#
+## Feature 5: Tutorial Integration
 
-AI helps me:
-- Understand C# syntax and language features
-- Apply object-oriented principles correctly
-- Debug event-driven and real-time game logic
+### Description
 
-All AI-assisted code is:
-- Understood
-- Modified
-- Explainable by me
+Ensures the existing tutorial integrates cleanly into the campaign flow as the entry point.
 
----
+### Requirements
 
-## Learning Goal 2: Software Design & Architecture
+* R5.1: The tutorial shall be the first required campaign stage.
+* R5.2: Completion of the tutorial shall unlock the first combat node.
+* R5.3: Tutorial completion state shall be recorded in campaign progress data.
 
-AI supports my learning by:
-- Discussing design patterns
-- Exploring system decomposition
-- Evaluating architectural tradeoffs
+### Testing
 
-Final decisions are:
-- Designed by me
-- Implemented by me
-- Justified by me
+* T5.1: Complete the tutorial and verify campaign progression updates.
+* T5.2: Restart the game and confirm the tutorial is not replayed unless manually reset.
 
 ---
 
-## AI Usage Boundaries
+## Feature 6: Metrics and Validation Support
 
-AI is **not** used to:
-- Blindly generate solutions
-- Replace understanding
-- Submit unexplained code
+### Description
 
-If I cannot explain or modify it, I do not use it.
+Provides instrumentation to support progress tracking and burndown metrics for project evaluation.
 
----
+### Requirements
 
-## Version Control & Transparency
+* R6.1: The system shall expose counts of implemented features and requirements.
+* R6.2: Unimplemented features shall be clearly identifiable.
+* R6.3: Feature and requirement completion data shall be manually verifiable via documentation or logs.
 
-To ensure visibility:
+### Testing
 
-- **All C# scripts** are hosted on **GitHub**
-- Project documentation is available on **GitHub & Canvas**
-
-Some files are excluded from GitHub:
-- Game assets
-- Large binary or engine-generated files
-
-These are managed using **Plastic SCM within Unity**, following industry practice.
+* T6.1: Cross-check documented requirements against implemented systems.
+* T6.2: Verify feature counts align with reported burndown metrics.
 
 ---
 
-## Stakeholder Readiness
+## Current Implementation Summary
 
-I am prepared to answer questions regarding:
-
-- System architecture
-- AI usage and limitations
-- Campaign design decisions
-- Progress tracking and scope control
-- Ethical and responsible AI use
-
----
-
-## Access to Project Materials
-
-All relevant materials are publicly accessible:
-
-- Source code (scripts): GitHub
-- Design documents: GitHub & Canvas
-- AI usage explanations: GitHub & Canvas
-
-This ensures transparency and accountability.
-
----
-
-## Summary
-
-- Clear project goals and features
-- Defined learning objectives with AI
-- Measurable progress and burndown
-- Transparent documentation and version control
-- Readiness for stakeholder feedback
-
----
-
-# Thank You
-Questions?
+* Implemented Features: Tutorial system, core gesture recognition, basic combat loop
+* Pending Features: Campaign progression, spell unlocking, map navigation, AI scaling
+* Feature Burndown Rate: 0 (campaign features not yet implemented)
+* Total Identified Requirements: Defined per feature above and subject to iteration
