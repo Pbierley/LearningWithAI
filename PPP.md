@@ -2,7 +2,7 @@
 marp: true
 title: Spell Arena
 paginate: true
-footer: © 2026 Your Name
+footer: © 2026 
 ---
 
 ## Campaign Mode Spell Arena
