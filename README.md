@@ -1,127 +1,126 @@
 ---
 marp: true
-title: Using AI in ASE 485
+title: AI Use Justification – Gesture-Based Wizard Game
 theme: default
 paginate: true
 ---
 
-# Using AI in ASE 485
-### Responsible & Intentional AI Use
+# Why AI Is Necessary
+### Gesture-Based Wizard Spellcasting Game
 
 ---
 
-## Why AI Matters
+## Why AI Is Required
 
-- We are in the biggest technological shift since the PC and the internet  
-- AI is transforming how software is designed, built, and deployed  
-- ASE 485 embraces this reality instead of ignoring it
+This project is a **C# wizard game that uses real-time hand gesture recognition**
+to cast in-game spells.
 
----
+AI is not used for convenience — it is an **enabling technology**.
 
-## Course Perspective
+Hand gestures are:
+- Continuous and noisy
+- Highly variable between users
+- Dependent on real-time interpretation
 
-ASE 485 has been redesigned for the AI era:
-- Focus on **system design & architecture**
-- Emphasis on **problem solving with AI tools**
-- Publishing and deploying real work
+AI techniques are required to:
+- Interpret raw camera or sensor input
+- Recognize gesture patterns
+- Translate imperfect real-world movement into intentional game actions
 
----
-
-## My AI Philosophy
-
-AI is a **tool**, not a replacement for thinking.
-
-I use AI as:
-- Tutor
-- Design partner
-- Pair programmer
-- Debugging assistant
-
-I do **not** use AI as:
-- A black box
-- A shortcut
-- A substitute for understanding
+Without AI, this project would not be feasible.
 
 ---
 
-## Key Rule
+## AI as an Enabling Technology
 
-> If AI becomes the pilot and I become the passenger, learning stops.
+Gesture recognition requires:
+- Pattern recognition
+- Classification under uncertainty
+- Real-time decision making
+
+These are problems that traditional rule-based systems
+cannot solve reliably at scale.
+
+AI makes this interaction possible.
+
+---
+
+## How I Use AI
+### As a Teacher, Not a Shortcut
+
+I treat AI as a **learning tool**, not a solution generator.
+
+AI helps me:
+- Understand how gesture recognition systems work
+- Learn unfamiliar APIs and SDKs
+- Reason about system architecture and data flow
+- Explore multiple design approaches
+
+AI functions like:
+- A private tutor
+- A design sounding board
+- A debugging partner
+
+---
+
+## What AI Is NOT Used For
+
+AI is **not** used to:
+- Generate code I cannot explain
+- Replace my design decisions
+- Act as a black box solution
+- Submit work I do not understand
 
 Understanding always comes first.
 
 ---
 
-## How I Use AI (1/3)
-### System Design & Architecture
+## My Learning-First Workflow
 
-- Brainstorming architectures
-- Evaluating tradeoffs
-- Identifying risks (scalability, security, maintainability)
-- Asking “what if” questions
+When AI provides suggestions or code, I:
 
-Final decisions are always **mine**.
+1. **Understand before using**  
+   I ensure I can explain what the code does and why it works.
 
----
+2. **Test and modify**  
+   I run, break, and adapt the code to fit my game logic.
 
-## How I Use AI (2/3)
-### Learning & Concepts
+3. **Integrate intentionally**  
+   AI-assisted components are integrated into a system I designed.
 
-- Explaining unfamiliar technologies
-- Breaking down documentation
-- Providing examples I analyze and adapt
-
-If I can’t explain it, I don’t submit it.
+4. **Own the result**  
+   I can extend, debug, or explain the system without AI assistance.
 
 ---
 
-## How I Use AI (3/3)
-### Coding & Debugging
+## Why Copy-Paste Fails Here
 
-- Generating starter code
-- Refactoring suggestions
-- Debugging logic and errors
+A copy-paste approach would not work for this project.
 
-All code reflects **my understanding**.
+Gesture recognition systems:
+- Vary with lighting, angles, and users
+- Require tuning and iteration
+- Behave unpredictably in real-time environments
 
----
-
-## Deployment & Publishing
-
-AI may help with:
-- Deployment workflows
-- Configuration issues
-- Documentation clarity
-
-But deployments are always validated hands-on.
+Blind copying would result in:
+- Unfixable bugs
+- Unreliable spell casting
+- A system the developer cannot explain
 
 ---
 
-## Academic Integrity
+## The Real Goal
 
-- Using AI without understanding = cheating
-- Integrity is non-negotiable
-- I can explain and modify all submitted work
+The goal is not to let AI build the game.
 
----
+The goal is to:
+- Become a stronger problem solver
+- Design AI-adjacent systems responsibly
+- Apply judgment in an AI-driven environment
 
-## Why This Matters
+AI is the tool.
 
-Modern engineers are judged by:
-- Problem solving
-- System thinking
-- Judgment
-
-Not just typing code.
-
----
-
-## The Choice
-
-- Use AI to become a **better problem solver**
-- Or copy answers and become replaceable
-
-I choose the first.
+I am the wizard.
 
 ---
 
