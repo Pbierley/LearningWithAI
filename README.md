@@ -39,39 +39,59 @@ Gesture recognition requires:
 - Real-time decision making
 
 These are problems that traditional rule-based systems
-cannot solve reliably at scale.
+cannot solve reliably.
 
 AI makes this interaction possible.
+
+---
+
+## My Learning Goals for Using AI
+
+I use AI intentionally to support **two primary learning goals**:
+
+1. **Learn and improve my C# skills**
+2. **Refine my software design patterns and system architecture skills**
+
+AI accelerates learning — it does not replace thinking.
+
+---
+
+## Learning Goal 1: Learning C#
+
+AI helps me learn C# by:
+- Explaining language features and syntax
+- Clarifying object-oriented concepts
+- Assisting with event-driven and real-time game logic
+- Debugging C#-specific issues
+
+I actively learn by modifying, refactoring, and explaining all AI-assisted code.
+
+---
+
+## Learning Goal 2: Software Design & Architecture
+
+AI assists me by:
+- Discussing software design patterns
+- Exploring separation of concerns
+- Reasoning about real-time system architecture
+- Evaluating tradeoffs between design approaches
+
+All architectural decisions are designed, implemented, and justified by me.
 
 ---
 
 ## How I Use AI
 ### As a Teacher, Not a Shortcut
 
-I treat AI as a **learning tool**, not a solution generator.
-
-AI helps me:
-- Understand how gesture recognition systems work
-- Learn unfamiliar APIs and SDKs
-- Reason about system architecture and data flow
-- Explore multiple design approaches
-
-AI functions like:
+AI functions as:
 - A private tutor
 - A design sounding board
 - A debugging partner
 
----
-
-## What AI Is NOT Used For
-
-AI is **not** used to:
-- Generate code I cannot explain
-- Replace my design decisions
-- Act as a black box solution
-- Submit work I do not understand
-
-Understanding always comes first.
+AI is **not** used as:
+- A black box
+- A copy-paste solution
+- A replacement for understanding
 
 ---
 
@@ -79,17 +99,36 @@ Understanding always comes first.
 
 When AI provides suggestions or code, I:
 
-1. **Understand before using**  
-   I ensure I can explain what the code does and why it works.
+1. **Understand before using**
+2. **Test and modify**
+3. **Integrate intentionally**
+4. **Own the result**
 
-2. **Test and modify**  
-   I run, break, and adapt the code to fit my game logic.
+If I cannot explain it, I do not submit it.
 
-3. **Integrate intentionally**  
-   AI-assisted components are integrated into a system I designed.
+---
 
-4. **Own the result**  
-   I can extend, debug, or explain the system without AI assistance.
+## Repository Visibility & Version Control
+
+To ensure transparency and visibility:
+
+- **All C# scripts** for this project will be committed to **GitHub**
+- This allows instructors and reviewers to:
+  - See my code
+  - Review my architecture and design decisions
+  - Track my progress over time
+
+Some project files are **not included in GitHub**:
+
+- Game assets (models, textures, animations)
+- Engine-generated or large binary files
+
+These files are managed using **Plastic SCM within the Unity Editor**, which is:
+- Industry-standard for Unity projects
+- Better suited for large binary assets
+- Integrated directly into the game development workflow
+
+This approach balances **academic transparency** with **practical game development practices**.
 
 ---
 
@@ -98,14 +137,11 @@ When AI provides suggestions or code, I:
 A copy-paste approach would not work for this project.
 
 Gesture recognition systems:
-- Vary with lighting, angles, and users
 - Require tuning and iteration
-- Behave unpredictably in real-time environments
+- Behave unpredictably in real time
+- Demand understanding to debug and improve
 
-Blind copying would result in:
-- Unfixable bugs
-- Unreliable spell casting
-- A system the developer cannot explain
+Blind copying would result in an unmaintainable system.
 
 ---
 
@@ -114,9 +150,9 @@ Blind copying would result in:
 The goal is not to let AI build the game.
 
 The goal is to:
-- Become a stronger problem solver
-- Design AI-adjacent systems responsibly
-- Apply judgment in an AI-driven environment
+- Become a stronger C# developer
+- Improve architectural judgment
+- Learn to use AI responsibly in software engineering
 
 AI is the tool.
 
