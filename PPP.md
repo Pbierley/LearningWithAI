@@ -1,4 +1,11 @@
-## Campaign Mode Technical Breakdown
+---
+marp: true
+title: Spell Arena
+paginate: true
+footer: © 2026 Your Name
+---
+
+## Campaign Mode Spell Arena
 
 ## High-Level Overview (Slide Breakdown)
 
