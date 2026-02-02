@@ -1,4 +1,4 @@
-## Campaign Mode Technical Breakdown
+## Spell Arena
 
 ## High-Level Overview (Slide Breakdown)
 
