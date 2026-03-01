@@ -45,38 +45,38 @@ AI makes this interaction possible.
 
 ---
 
-## My Learning Goals for Using AI
+## What Are the Two Learning with AI Topics?
 
-I use AI intentionally to support **two primary learning goals**:
+I use AI intentionally to support **two primary learning topics**:
 
-1. **Learn and improve my C# skills**
-2. **Refine my software design patterns and system architecture skills**
+1. **Supervised Learning for Custom Gesture Classification**
+2. **Reinforcement Learning for "Smart" Enemy Reactions**
 
 AI accelerates learning — it does not replace thinking.
 
 ---
 
-## Learning Goal 1: Learning C#
+## Topic 1: Supervised Learning for Custom Gesture Classification
 
-AI helps me learn C# by:
-- Explaining language features and syntax
-- Clarifying object-oriented concepts
-- Assisting with event-driven and real-time game logic
-- Debugging C#-specific issues
+AI helps me with supervised learning by:
+- Preparing labeled gesture training data
+- Choosing and evaluating classification approaches
+- Improving classification accuracy across different users
+- Integrating gesture prediction into real-time gameplay
 
-I actively learn by modifying, refactoring, and explaining all AI-assisted code.
+I actively learn by building, testing, and refining each model-driven feature.
 
 ---
 
-## Learning Goal 2: Software Design & Architecture
+## Topic 2: Reinforcement Learning for "Smart" Enemy Reactions
 
-AI assists me by:
-- Discussing software design patterns
-- Exploring separation of concerns
-- Reasoning about real-time system architecture
-- Evaluating tradeoffs between design approaches
+AI helps me with reinforcement learning by:
+- Designing reward signals for enemy behavior
+- Training agents to react to player gestures and spell usage
+- Balancing challenge, fairness, and unpredictability
+- Iterating on policies based on in-game outcomes
 
-All architectural decisions are designed, implemented, and justified by me.
+All gameplay decisions are designed, implemented, and validated by me.
 
 ---
 
@@ -108,43 +108,6 @@ If I cannot explain it, I do not submit it.
 
 ---
 
-## Repository Visibility & Version Control
-
-To ensure transparency and visibility:
-
-- **All C# scripts** for this project will be committed to **GitHub**
-- This allows instructors and reviewers to:
-  - See my code
-  - Review my architecture and design decisions
-  - Track my progress over time
-
-Some project files are **not included in GitHub**:
-
-- Game assets (models, textures, animations)
-- Engine-generated or large binary files
-
-These files are managed using **Plastic SCM within the Unity Editor**, which is:
-- Industry-standard for Unity projects
-- Better suited for large binary assets
-- Integrated directly into the game development workflow
-
-This approach balances **academic transparency** with **practical game development practices**.
-
----
-
-## Why Copy-Paste Fails Here
-
-A copy-paste approach would not work for this project.
-
-Gesture recognition systems:
-- Require tuning and iteration
-- Behave unpredictably in real time
-- Demand understanding to debug and improve
-
-Blind copying would result in an unmaintainable system.
-
----
-
 ## The Real Goal
 
 The goal is not to let AI build the game.
@@ -153,10 +116,6 @@ The goal is to:
 - Become a stronger C# developer
 - Improve architectural judgment
 - Learn to use AI responsibly in software engineering
-
-AI is the tool.
-
-I am the wizard.
 
 ---
 
