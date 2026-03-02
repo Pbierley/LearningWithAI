@@ -1,133 +1,132 @@
 ---
 marp: true
-title: Spell Arena
+title: Spell Arena Campaign PPP
 paginate: true
-footer: © 2026 
+footer: © 2026
 ---
 
-## Campaign Mode Spell Arena
-
-## High-Level Overview (Slide Breakdown)
-
-### Slide 1: What Is Being Added
-
-The campaign mode is a major expansion to the Hand Gesture Wizard game. It transforms the project from a single-scenario demonstration into a structured, multi-stage experience with clear goals and progression.
+# Spell Arena
+## Campaign Mode PPP
 
 ---
 
-### Slide 2: Why It Is Important for Users
+## Project Goal
 
-For players, the campaign introduces long-term objectives, increasing challenge, and a clear sense of advancement. Rather than repeating the same encounter, users progress through new stages, enemies, and mechanics.
-
----
-
-### Slide 3: Learning and Skill Progression
-
-Progressive unlocking of spells and encounters helps manage cognitive load. Players are encouraged to master core hand gestures and mechanics before being introduced to additional complexity, supporting learning and retention.
-
+Expand the Hand Gesture Wizard game from a single-scenario demo into a structured campaign with progression, map-based encounters, and clearer player goals.
 
 ---
 
-### Slide 4: Assessment and Validation Value
+## Why This Matters
 
-The campaign mode also enables measurable development progress. Clearly defined features, requirements, and test cases support validation, burndown tracking, and alignment with capstone assessment criteria.
+- Adds long-term progression and replay value.
+- Improves player learning through staged complexity.
+- Supports measurable development and capstone validation.
 
 ---
 
-This section provides a technical breakdown of the planned campaign mode for the Hand Gesture Wizard game. It decomposes the system into features, formal requirements, and corresponding test strategies to ensure correctness, stability, and measurable progress.
+## Implemented Progress (Weeks 4-7)
+
+- Campaign flow designed and decomposed into milestones.
+- World map system implemented.
+- Navigation between locations implemented.
+- Location-based opponent fights implemented.
+- Main menu reworked to include `Multiplayer` and `Campaign`.
+- Collaboration planning started with DFX students for character/model support.
 
 ---
 
 ## Feature 1: Campaign Progression System
 
-### Description
-
-Provides structured progression through the game, transitioning from a single demonstration scenario into a multi-stage campaign with increasing difficulty and content unlocks.
+### Status
+In progress
 
 ### Requirements
-
-* R1.1: The system shall track player campaign progress persistently across sessions.
-* R1.2: The system shall define discrete campaign stages (nodes or levels).
-* R1.3: Completion of a stage shall unlock the next available stage.
-* R1.4: Campaign progress data shall be stored using Unity’s save system or equivalent persistent storage.
+- R1.1: Track player campaign progress persistently across sessions.
+- R1.2: Define discrete campaign stages (nodes or levels).
+- R1.3: Completion of a stage unlocks the next stage.
+- R1.4: Store progress data using Unity save/persistent storage.
 
 ---
 
 ## Feature 2: Spell Progression and Unlocking
 
-### Description
-
-Introduces a learning curve by progressively unlocking spells as the player advances through the campaign.
+### Status
+Planned
 
 ### Requirements
-
-* R2.1: The system shall initialize new campaigns with a restricted spell set.
-* R2.2: Spells shall be unlockable based on campaign milestones.
-* R2.3: The player shall only be able to equip spells that have been unlocked.
-* R2.4: Unlock conditions shall be data-driven to allow easy tuning.
+- R2.1: Initialize new campaigns with a restricted spell set.
+- R2.2: Unlock spells based on campaign milestones.
+- R2.3: Allow equipping only unlocked spells.
+- R2.4: Keep unlock conditions data-driven.
 
 ---
 
 ## Feature 3: World Map Navigation
 
-### Description
-
-Implements a map-based interface where players select and travel between encounters.
 
 ### Requirements
-
-* R3.1: The system shall present a navigable campaign map UI.
-* R3.2: Each map node shall correspond to a combat encounter or event.
-* R3.3: Locked nodes shall be visually distinguishable from unlocked nodes.
-* R3.4: Selecting an unlocked node shall transition the player into the associated encounter.
+- R3.1: Present a navigable campaign map UI.
+- R3.2: Map nodes correspond to encounters/events.
+- R3.3: Locked nodes are visually distinct from unlocked nodes.
+- R3.4: Selecting an unlocked node transitions into encounter.
 
 ---
 
 ## Feature 4: AI Opponent Scaling
 
-### Description
-
-Expands beyond a single static CPU opponent by introducing difficulty scaling across the campaign.
 
 ### Requirements
-
-* R4.1: The system shall support multiple AI difficulty profiles.
-* R4.2: AI difficulty shall increase as campaign progression advances.
-* R4.3: AI behavior parameters shall be configurable without code changes.
+- R4.1: Support multiple AI difficulty profiles.
+- R4.2: Increase AI difficulty with campaign progression.
+- R4.3: Keep AI behavior parameters configurable without code changes.
 
 ---
 
 ## Feature 5: Tutorial Integration
 
-### Description
-
-Ensures the existing tutorial integrates cleanly into the campaign flow as the entry point.
 
 ### Requirements
-
-* R5.1: The tutorial shall be the first required campaign stage.
-* R5.2: Completion of the tutorial shall unlock the first combat node.
-* R5.3: Tutorial completion state shall be recorded in campaign progress data.
+- R5.1: Tutorial is the first required campaign stage.
+- R5.2: Completing tutorial unlocks first combat node.
+- R5.3: Record tutorial completion in campaign progress data.
 
 ---
 
 ## Feature 6: Metrics and Validation Support
 
-### Description
-
-Provides instrumentation to support progress tracking and burndown metrics for project evaluation.
+### Status
+In progress
 
 ### Requirements
+- R6.1: Expose counts of implemented features and requirements.
+- R6.2: Clearly identify unimplemented features.
+- R6.3: Make completion data verifiable in docs/logs.
 
-* R6.1: The system shall expose counts of implemented features and requirements.
-* R6.2: Unimplemented features shall be clearly identifiable.
-* R6.3: Feature and requirement completion data shall be manually verifiable via documentation or logs.
+---
+
+## Completed Requirements (As of Week 7)
+
+- R1.2 completed: Discrete campaign stages/nodes are defined through campaign flow design.
+- R3.1 completed: Navigable campaign map UI implemented.
+- R3.2 completed: Map locations are tied to encounter/opponent fights.
+- R3.4 completed: Selecting locations navigates into associated fights.
 
 ---
 
 ## Current Implementation Summary
 
-* Implemented Features: Tutorial system, core gesture recognition, basic combat loop
-* Pending Features: Campaign progression, spell unlocking, map navigation, AI scaling
-* Feature Burndown Rate: 1/6 17% (campaign features not yet implemented)
-* Total Identified Requirements: Defined per feature above and subject to iteration
+- Implemented now: campaign flow design, world map navigation core, location-based encounters, updated main menu flow.
+- In progress: campaign stage persistence, tutorial-to-campaign integration, progress metrics/reporting.
+- Planned next: spell unlock progression and AI scaling profiles.
+
+---
+
+## Burndown Snapshot
+
+- Total features identified: 6
+- Fully completed features: 1/6 (`F3`) = 16.7%
+- Features in progress: 2/6  = 33.3%
+- Features not started/planned: 3/6  = 50.0%
+- Total requirements identified: 21
+- Completed requirements: 4/21 = 19.0%
+- Remaining requirements: 17/21 = 81.0%
