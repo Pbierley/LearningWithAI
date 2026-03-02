@@ -121,9 +121,22 @@ In progress
 
 ---
 
+## Retrospective
+
+### What Went Well
+- Implementing the map went well.
+- Map navigation and location encounter setup were completed successfully.
+
+### What Did Not Go Well
+- Scheduling did not go well.
+- Time coordination made it harder to keep work pacing consistent.
+
+---
+
 ## Burndown Snapshot
 
 - Total features identified: 6
+- Lines of code ~ 342
 - Fully completed features: 1/6 (`F3`) = 16.7%
 - Features in progress: 2/6  = 33.3%
 - Features not started/planned: 3/6  = 50.0%
