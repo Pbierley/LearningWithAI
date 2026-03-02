@@ -3,6 +3,25 @@ marp: true
 title: Spell Arena Campaign PPP
 paginate: true
 footer: © 2026
+style: |
+  section {
+    font-size: 28px;
+    padding: 48px 56px;
+  }
+  h1 { font-size: 52px; }
+  h2 { font-size: 34px; }
+  h3 {
+    font-size: 26px;
+    margin: 0.2em 0;
+  }
+  ul {
+    margin: 0.2em 0 0 1em;
+    padding-left: 0.8em;
+  }
+  li {
+    margin: 0.15em 0;
+    line-height: 1.2;
+  }
 ---
 
 # Spell Arena
@@ -35,7 +54,8 @@ Expand the Hand Gesture Wizard game from a single-scenario demo into a structure
 
 ---
 
-## My Learning With AI: Supervised Learning for Custom Gesture Classification
+## My Learning With AI
+### Supervised Learning for Custom Gesture Classification
 
 - Train a gesture classifier on labeled hand-pose/trajectory examples.
 - Improve recognition accuracy for custom spell gestures over time.
@@ -43,7 +63,8 @@ Expand the Hand Gesture Wizard game from a single-scenario demo into a structure
 
 ---
 
-## My Learning With AI: Reinforcement Learning for "Smart" Enemy Reactions
+## My Learning With AI
+### Reinforcement Learning for "Smart" Enemy Reactions
 
 - Train enemy behavior through reward-based combat outcomes.
 - Encourage adaptive reactions to player spell/gesture patterns.
@@ -156,6 +177,11 @@ In progress
 - Fully completed features: 1/6 (`F3`) = 16.7%
 - Features in progress: 2/6  = 33.3%
 - Features not started/planned: 3/6  = 50.0%
+
+---
+
+## Burndown Snapshot (Requirements)
+
 - Total requirements identified: 21
 - Completed requirements: 4/21 = 19.0%
 - Remaining requirements: 17/21 = 81.0%
