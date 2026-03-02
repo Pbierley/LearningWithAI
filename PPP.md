@@ -35,7 +35,7 @@ Expand the Hand Gesture Wizard game from a single-scenario demo into a structure
 
 ---
 
-## Supervised Learning for Custom Gesture Classification
+## My Learning With AI: Supervised Learning for Custom Gesture Classification
 
 - Train a gesture classifier on labeled hand-pose/trajectory examples.
 - Improve recognition accuracy for custom spell gestures over time.
@@ -43,7 +43,7 @@ Expand the Hand Gesture Wizard game from a single-scenario demo into a structure
 
 ---
 
-## Reinforcement Learning for "Smart" Enemy Reactions
+## My Learning With AI: Reinforcement Learning for "Smart" Enemy Reactions
 
 - Train enemy behavior through reward-based combat outcomes.
 - Encourage adaptive reactions to player spell/gesture patterns.
