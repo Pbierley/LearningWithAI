@@ -94,6 +94,10 @@ Supervised learning is a type of machine learning where a model is trained on **
 
 ---
 
+![bg contain](PixelBurg_Image.png)
+
+---
+
 ### What I Learned — Topic 1
 
 > Supervised learning is only as good as the data behind it. I learned that giving enough context is the most important part of working with AI. The more precise the data given the more depth the model has, and usually leads to more accurate responses that give the solutions / debugging you're looking for.
