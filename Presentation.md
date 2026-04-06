@@ -79,6 +79,10 @@ Supervised learning is a type of machine learning where a model is trained on **
 
 ---
 
+![bg contain](WorldMapExample.png)
+
+---
+
 ### Sourcing Assets and Optimizing Scene Performance
 
 - Claude walked me through how to search and filter the Unity Asset Store for free assets that fit the game's visual style
