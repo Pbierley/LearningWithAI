@@ -126,9 +126,9 @@ Reinforcement learning (RL) is where an agent learns by **trial and error** — 
 
 ---
 
-### Designing Reward Signals for Enemy Behavior
+### Designing Signals for Enemy Behavior
 
-- AI helped me think through what the enemy should be "rewarded" for (e.g. dealing damage, surviving, successfully countering a spell)
+- AI helped me think through what the enemy should be trained for (e.g. dealing damage, surviving, successfully countering a spell)
   - Easier implementations:
     - If the user is sending an attack → CPU attempts to queue a shield or dodge
     - If no attack is queued → CPU attempts to heal if health is not full
@@ -182,7 +182,7 @@ Reinforcement learning (RL) is where an agent learns by **trial and error** — 
 
 ### What I Learned — Topic 2
 
-> Reinforcement learning requires patience and careful design. The enemy doesn't just "get smarter" — you have to deliberately design what smart means through rewards, and then validate it through play. AI tools helped me understand the theory while the implementation and tuning was tested manually to best collect feedback from a player and get a feel for the difficulty of the opponent.
+> Reinforcement learning requires patience and careful design. The enemy doesn't just "get smarter" — you have to deliberately design what smart means through in game actions, and then validate it through play. AI tools helped me understand the theory while the implementation and tuning was tested manually to best collect feedback from a player and get a feel for the difficulty of the opponent.
 
 ---
 
