@@ -1,3 +1,9 @@
+---
+marp: true
+theme: default
+paginate: true
+---
+
 # Spell Unlock System — Implementation Plan
 ### Unlocking Spells by Defeating Enemies at Map Locations
 
@@ -149,8 +155,6 @@ if (data.unlockedSpellNames.Count == 0)
 **Option B** — In the SpellBook UI, always show the first spell regardless of unlock state.
 
 ---
-
-## Full Data Flow
 
 ```
 Player defeats enemy

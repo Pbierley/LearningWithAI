@@ -1,3 +1,9 @@
+---
+marp: true
+theme: default
+paginate: true
+---
+
 # Map User Flow
 ### How Players Progress Through Locations
 
@@ -20,6 +26,8 @@ The map uses a **linear unlock system** — locations are completed in order, an
 ---
 
 ## User Flow Diagram
+
+---
 
 ```
 [ Open Map Screen ]
