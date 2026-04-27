@@ -376,19 +376,6 @@ This solved the "doubling up" bug — without cancellation, the AI would show a 
 
 The heal system activates when the AI takes damage below a health threshold:
 
-```csharp
-private void OnSelfDamaged(SpellCaster caster)
-{
-    float healthPercent = caster.currentHealth / caster.maxHealth;
-    if (healthPercent >= healHealthThreshold) return;
-    if (Random.value < healChance)
-    {
-        _isHealing = true;
-        StartCoroutine(ReactWithHeal());
-    }
-}
-```
-
 The heal spell chosen is **weighted** — designers can make a harder enemy prefer stronger heals:
 
 ```csharp
@@ -403,17 +390,6 @@ The heal spell chosen is **weighted** — designers can make a harder enemy pref
 The AI's shield doesn't go through the normal `Cast()` → animation event → `OnReleaseSpell()` path — shields activate instantly. This meant mana was never deducted.
 
 Fix: the AI calls `UseMana()` directly before activating the shield, after verifying it can afford it:
-
-```csharp
-if (shieldEntry?.spell != null && !spellCaster.CanCast(shieldEntry.spell))
-{
-    _isReacting = false;
-    yield break;  // can't afford to shield — absorb the hit
-}
-
-spellCaster.UseMana(shieldEntry.spell.manaCost);
-aiShield.ActivateShield();
-```
 
 Counter-attacks check mana **twice** — before displaying the gesture sequence and after — preventing the AI from committing to a cast it can no longer afford mid-animation.
 
